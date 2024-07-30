@@ -1,0 +1,22 @@
+[
+    {
+        "id": "1",
+        "username": "superadmin@example.com",
+        "password": "$2b$12$df3kle/G6f/nMJe1Jj3PnOv40ety.BMHu2KeXOTZziaMEHr/cTGw6",
+        "role": "superadmin"
+    },
+    {
+        "id": "2",
+        "username": "orgadmin1@example.com",
+        "password": "$2b$12$iLy.RTbhDntkuQ3j.WbxHuk5k9DPspqVjhQ0H8auVjBJViejcGjQS",
+        "role": "admin",
+        "organization": "Org1"
+    },
+    {
+        "id": "3",
+        "username": "user1@example.com",
+        "password": "$2b$12$Bvw037ldHRE30talwQoLee7a2qdE9rfyg8dre8qztLqnQth9BsrSq",
+        "role": "user",
+        "organization": "Org1"
+    }
+]

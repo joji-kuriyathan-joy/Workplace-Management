@@ -1,0 +1,76 @@
+[
+    {
+        "id": "1",
+        "username": "superadmin@example.com",
+        "password": "$2b$12$ksbcN9ekaFc9WdLT6gOKt.24xHsqHlx/bWpEcgB2tuH8ZHrWAnaTK",
+        "role": "superadmin"
+    },
+    {
+        "id": "2",
+        "username": "orgadmin1@example.com",
+        "password": "$2b$12$TXy2MBeGMYreZrkyAr8mdelK/yTtYYKoBI2gT3XIffPu6t/z4u0Hm",
+        "role": "admin",
+        "organization": "Org1"
+    },
+    {
+        "id": "3",
+        "username": "user1@example.com",
+        "password": "$2b$12$9hBdaFcypmA2FUbjTbf9u.fmBNFmZD2fG17e965hfIIDYUP3WAusC",
+        "role": "user",
+        "organization": "Org1",
+        "reset_token": "85e018e3-0966-48d1-9d84-6ad31a877cbd"
+    },
+    {
+        "id": "d292bd28-c5b4-4135-ae61-25cbbc3a1d9c",
+        "username": "newuser@example.com",
+        "password": "$2b$12$LJ0mz1OUDy8qfPI6oTYQx.E0O2e7Jb0UYb83WClyuKClAbkDmeBS6",
+        "role": "user",
+        "organization": "Org1"
+    },
+    {
+        "id": "15f81874-d668-4741-bf52-832e6d53a2a4",
+        "username": "anothernewuser@example.com",
+        "password": "anothernewuserpass",
+        "role": "user",
+        "organization": "Org1"
+    },
+    {
+        "id": "2047f630-60e0-4e5a-8b94-63285efb7306",
+        "username": "uniquenewuser@example.com",
+        "password": "$2b$12$HPD2zkPUCmP3GkmFJQwyeeYaCN6gCx2QyjeGhGtNpkW3sSVlVkWly",
+        "role": "user",
+        "organization": "Org1"
+    },
+    {
+        "id": "18766c91-e842-4437-b230-b244b14d5ba3",
+        "username": "uniqueanothernewuser@example.com",
+        "password": "anothernewuserpass",
+        "role": "user",
+        "organization": "Org1"
+    },
+    {
+        "id": "a3ae2179-b8bc-4195-9352-d7c49ba2a20a",
+        "username": "jojikj12dd999@gmail.com",
+        "password": "$2b$12$njF5w.LgGrKBvEh2I8Ub1u5gPgq4DVANVjnz.jQBniH.4aJQrRpj2",
+        "role": "user",
+        "organization": "Org1",
+        "verified": false,
+        "verification_token": "b946da9b-aa37-4292-b828-3063049aca2c"
+    },
+    {
+        "id": "784dddae-1413-49be-a886-a0d41f9c41aa",
+        "username": "jojikj999@gmail.com",
+        "password": "$2b$12$FfZgfxbbdzwVmbgumqUhpOeQH8hS.NvFRhQ77VBphMBqWFl8R0Ea6",
+        "role": "admin",
+        "organization": "Org1",
+        "verified": true,
+        "reset_token": "65c42a0f-5364-472d-ad38-ae5f1e37ea57"
+    },
+    {
+        "id": "4d7e4e57-b53d-4b5a-aeab-2e6e45292c45",
+        "username": "sample@example.com",
+        "password": "$2b$12$Kx1vT1wslzIIE5AgzzwOhOX9xPs1YPXne3Ycrld5GJqZ14PyKRs0O",
+        "role": "user",
+        "organization": "Org1"
+    }
+]

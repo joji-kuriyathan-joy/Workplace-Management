@@ -49,7 +49,7 @@ Admin can edit and approve timesheets.
     Option to change password and update details.
 
 
-# Project Set up 
+# Project Set up Frontend
     npm create vite@latest
     give a name for the project i have given wpm-ui
     Select a framework: » React
@@ -59,3 +59,54 @@ Admin can edit and approve timesheets.
     cd wpm-ui
     npm install
     npm run dev
+
+# 1. Project Structure React(frontend)
+wpm-ui/
+├── public/
+├── src/
+│   ├── components/
+│   │   ├── admin/
+│   │   │   ├── AdminDashboard.jsx
+│   │   │   ├── UserManagement.jsx
+│   │   │   ├── RotaManagement.jsx
+│   │   │   ├── TimesheetApproval.jsx
+│   │   ├── user/
+│   │   │   ├── UserDashboard.jsx
+│   │   │   ├── RotaView.jsx
+│   │   │   ├── Timesheet.jsx
+│   │   ├── common/
+│   │   │   ├── Header.jsx
+│   │   │   ├── Footer.jsx
+│   ├── pages/
+│   │   ├── AdminPage.jsx
+│   │   ├── UserPage.jsx
+│   │   ├── LoginPage.jsx
+│   │   ├── RegisterPage.jsx
+│   ├── App.jsx
+│   ├── main.jsx
+├── package.json
+
+
+# 2. Installing Dependencies
+    npm install react-router-dom
+    npm install @vitejs/plugin-react
+
+# Project Set up Backend
+    mkdir wpm-backend
+    cd wpm-backend
+    python -m venv venv
+    source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+    pip install Flask flask-cors flask-jwt-extended
+
+# 1. Project Structure Flask (Backend)
+wpm-backend/
+├── app/
+│   ├── __init__.py
+│   ├── auth.py
+│   ├── models.py
+│   ├── routes.py
+│   ├── config.py
+├── venv/
+├── run.py
+├── requirements.txt
+
