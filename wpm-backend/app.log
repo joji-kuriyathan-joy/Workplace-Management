@@ -47,3 +47,4 @@
 2024-07-30 19:40:17,527 INFO werkzeug Thread-16 (process_request_thread) : 127.0.0.1 - - [30/Jul/2024 19:40:17] "OPTIONS /login HTTP/1.1" 200 -
 2024-07-30 19:40:17,788 INFO app.auth Thread-17 (process_request_thread) : data------- 
 2024-07-30 19:40:18,076 INFO app.auth Thread-17 (process_request_thread) : User jojikj0999@gmail.com logged in successfully.
+2024-07-30 19:40:18,076 INFO werkzeug Thread-17 (process_request_thread) : 127.0.0.1 - - [30/Jul/2024 19:40:18] "POST /login HTTP/1.1" 200 -
