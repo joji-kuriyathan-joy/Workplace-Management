@@ -72,5 +72,13 @@
         "password": "$2b$12$Kx1vT1wslzIIE5AgzzwOhOX9xPs1YPXne3Ycrld5GJqZ14PyKRs0O",
         "role": "user",
         "organization": "Org1"
+    },
+    {
+        "id": "cba798b0-0231-48a8-a47b-359b9d735374",
+        "username": "jojikj0999@gmail.com",
+        "password": "$2b$12$P/Fmm.oCXePPHIYJSMZppOxaXNIPh.LbhNY3P1wP3wncVc3BjbZnS",
+        "role": "admin",
+        "organization": "Org1",
+        "verified": true
     }
 ]

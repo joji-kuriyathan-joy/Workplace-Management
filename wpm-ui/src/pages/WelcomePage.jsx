@@ -1,22 +1,27 @@
-// src/pages/WelcomePage.jsx
 import React from 'react';
+import { Container, Row, Col, Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import Header from '../components/common/Header.jsx';
+import Footer from '../components/common/Footer.jsx';
 
 const WelcomePage = () => {
   return (
-    <div className="d-flex vh-100">
-      <div className="container text-center align-self-center">
-        <h1 className="mb-4">Workplace Management App</h1>
-        <div className="d-flex justify-content-center">
-          <Link to="/login" className="btn btn-primary mx-2">
-            Login
-          </Link>
-          <Link to="/register" className="btn btn-secondary mx-2">
-            Register
-          </Link>
-        </div>
-      </div>
+    <div>
+      <Header />
+      <Container fluid className="text-center mt-4">
+        <Row className="justify-content-center">
+          <Col md={8}>
+            <h1>Welcome to Workplace Management</h1>
+            <p>
+              Manage your workplace efficiently with our comprehensive tool.
+              From scheduling shifts to logging work hours, everything is at your fingertips.
+            </p>
+            <Button as={Link} to="/login" variant="primary" className="mr-2">Login</Button>
+            <Button as={Link} to="/register" variant="secondary">Register</Button>
+          </Col>
+        </Row>
+      </Container>
+      <Footer />
     </div>
   );
 };

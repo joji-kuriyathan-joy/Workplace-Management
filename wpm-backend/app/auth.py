@@ -27,11 +27,11 @@ def role_required(role):
 @auth_bp.route('/login', methods=['POST'])
 def login():
     try:
+        logger.info("data------- ")
         data = request.get_json()
         username = data.get('username')
         password = data.get('password')
         users = read_json('users.json')
-
         if username in login_attempts and login_attempts[username] >= 5:
             logger.warning(f"Account locked due to too many failed login attempts: {username}")
             return jsonify({"msg": "Account locked due to too many failed login attempts. Please try again later."}), 403

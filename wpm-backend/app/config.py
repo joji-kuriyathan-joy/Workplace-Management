@@ -10,7 +10,7 @@ class Config:
     MAIL_USERNAME = os.environ.get('MAIL_USERNAME')
     MAIL_PASSWORD = os.environ.get('MAIL_PASSWORD')
     MAIL_DEFAULT_SENDER = os.environ.get('MAIL_DEFAULT_SENDER')
-    SERVER_NAME = os.getenv('SERVER_NAME', 'localhost:5000')
+    # SERVER_NAME = os.getenv('SERVER_NAME', 'localhost:5000')
     ENV = os.getenv('FLASK_ENV', 'development')
 
 class DevelopmentConfig(Config):

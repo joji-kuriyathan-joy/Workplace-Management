@@ -25,6 +25,7 @@ def create_app():
 
 
     CORS(app)
+    # CORS(app, resources={r"/*": {"origins": "http://localhost:5173"}})  # Enable CORS for your frontend URL
     jwt = JWTManager(app)
     mail.init_app(app)
     # limiter.init_app(app)

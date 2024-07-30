@@ -1,39 +1,22 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
 body {
-  margin: 0;
-  /* display: flex;
-  place-items: center; */
-  min-width: 320px;
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
- flex-direction: column;
-}
-.login-view{
-  width:fit-content;
+  font-family: Arial, sans-serif;
 }
 
-.register-view{
-  width:fit-content;
+.container-fluid {
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
-.btn-custom{
-  border: 2px solid gray;
+h1 {
+  margin-bottom: 20px;
 }
-.btn-custom:hover{
-  background-color: hsla(0, 0%, 50%, 0.562);
+
+p {
+  margin-bottom: 30px;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }

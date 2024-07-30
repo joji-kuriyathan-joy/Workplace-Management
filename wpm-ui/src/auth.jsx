@@ -1,34 +1,31 @@
-// src/auth.js
-import React, { createContext, useState, useContext } from 'react';
+import React, { createContext, useContext, useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const AuthContext = createContext();
 
 export const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(null);
+  const navigate = useNavigate();
 
-  const login = async (username, password) => {
-    try {
-      const response = await fetch('http://localhost:5000/login', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ username, password }),
-      });
-      const data = await response.json();
-      if (response.ok) {
-        setUser({ username, role: data.role });
-        console.log(response.ok, { username, role: data.role });
-      } else {
-        // Handle error
-        console.error(data.msg);
-      }
-    } catch (error) {
-      console.error('Error during login:', error);
+  useEffect(() => {
+    const token = localStorage.getItem('token');
+    const role = localStorage.getItem('role');
+    if (token && role) {
+      setUser({ token, role });
     }
+  }, []);
+
+  const login = (token, role) => {
+    localStorage.setItem('token', token);
+    localStorage.setItem('role', role);
+    setUser({ token, role });
   };
+
   const logout = () => {
+    localStorage.removeItem('token');
+    localStorage.removeItem('role');
     setUser(null);
+    navigate('/login');
   };
 
   return (
@@ -38,4 +35,6 @@ export const AuthProvider = ({ children }) => {
   );
 };
 
-export const useAuth = () => useContext(AuthContext);
+export const useAuth = () => {
+  return useContext(AuthContext);
+};
