@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { Form, Button, Container, Row, Col, Alert } from 'react-bootstrap';
 import Header from '../components/common/Header.jsx';
 import Footer from '../components/common/Footer.jsx';
+import { useAuth } from '../auth.jsx';
 
 const LoginPage = () => {
   const [username, setUsername] = useState('');
@@ -10,6 +11,8 @@ const LoginPage = () => {
   const [error, setError] = useState(null);
   const navigate = useNavigate();
   const backendUrl = import.meta.env.VITE_BACKEND_URL;  // Access the backend URL from environment variables
+
+  const { user, login } = useAuth();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -24,13 +27,14 @@ const LoginPage = () => {
 
       const data = await response.json();
       if (response.ok) {
-        console.log(data, response.ok);
-        localStorage.setItem('token', data.access_token);
-        localStorage.setItem('role', data.role);
+        login(data.access_token,data.role,data.username,data.organization);
         if (data.role === 'admin' || data.role === 'superadmin') {
+          console.log('Admin Dahboard navigate')
           navigate('/admin/dashboard');
+
         } else {
-          navigate('/user');
+          console.log('User Dahboard navigate')
+          navigate('/user/dashboard');
         }
       } else {
         setError(data.msg);

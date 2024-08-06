@@ -16,24 +16,29 @@ blacklist = set()
 
 def create_app():
     app = Flask(__name__)
-    # app.config.from_object('app.config.Config')
+    app.config.from_object('app.config.Config')
     env = os.getenv('FLASK_ENV', 'development')
     if env == 'production':
         app.config.from_object('app.config.ProductionConfig')
     else:
         app.config.from_object('app.config.DevelopmentConfig')
 
-
-    CORS(app)
-    # CORS(app, resources={r"/*": {"origins": "http://localhost:5173"}})  # Enable CORS for your frontend URL
+    
+    # CORS(app)
+    CORS(app, resources={r"/*": {"origins": "http://localhost:5173"}})  # Enable CORS for your frontend URL
     jwt = JWTManager(app)
     mail.init_app(app)
     # limiter.init_app(app)
     
     # Configure logging
-    logging.basicConfig(filename='app.log', level=logging.INFO,
+    logging.basicConfig(filename='app.log', level=logging.DEBUG,
                         format='%(asctime)s %(levelname)s %(name)s %(threadName)s : %(message)s')
 
+    # Add a logger for the application
+    logger = logging.getLogger(__name__)
+    logger.setLevel(logging.DEBUG)
+
+    
 
     from .auth import auth_bp
     from .routes import main_bp

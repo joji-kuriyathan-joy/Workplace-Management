@@ -15,8 +15,8 @@ class Config:
 
 class DevelopmentConfig(Config):
     DEBUG = True
-    SERVER_NAME = 'http://localhost:5000'
+    SERVER_NAME = os.getenv('SERVER_NAME', 'localhost:5000')
 
 class ProductionConfig(Config):
     DEBUG = False
-    SERVER_NAME = 'your_production_server.com'
+    SERVER_NAME = os.getenv('SERVER_NAME', 'your_production_server.com')

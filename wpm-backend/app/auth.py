@@ -1,11 +1,12 @@
 from flask import Blueprint, request, jsonify, current_app
-from flask_jwt_extended import create_access_token, jwt_required, get_jwt_identity, get_jwt
+from flask_jwt_extended import create_access_token, jwt_required, get_jwt_identity, get_jwt, verify_jwt_in_request
 from flask_mail import Message
 from .models import read_json, write_json, hash_password, check_password
 import uuid
 from app import mail, blacklist
 from functools import wraps
 import logging
+import os
 
 auth_bp = Blueprint('auth', __name__)
 login_attempts = {}
@@ -27,7 +28,6 @@ def role_required(role):
 @auth_bp.route('/login', methods=['POST'])
 def login():
     try:
-        logger.info("data------- ")
         data = request.get_json()
         username = data.get('username')
         password = data.get('password')
@@ -44,7 +44,7 @@ def login():
             access_token = create_access_token(identity={'username': username, 'role': user['role'], 'organization': user.get('organization')})
             login_attempts[username] = 0
             logger.info(f"User {username} logged in successfully.")
-            return jsonify(access_token=access_token, role=user['role']), 200
+            return jsonify(access_token=access_token, role=user['role'], username=username,organization=user.get('organization')), 200
 
         login_attempts[username] = login_attempts.get(username, 0) + 1
         logger.warning(f"Failed login attempt for user: {username}")
@@ -170,3 +170,11 @@ def logout():
     except Exception as e:
         logger.error(f"Internal Server Error: {str(e)}", exc_info=True)
         return jsonify({"msg": f"Internal Server Error: {str(e)}"}), 500
+
+# endpoint to check the token's validity:
+@auth_bp.route('/validate-token', methods=['GET'])
+@jwt_required()
+def validate_token():
+    # If the request is here, it means the token is valid
+    current_user = get_jwt_identity()
+    return jsonify({"msg": "Token is valid", "user": current_user}), 200

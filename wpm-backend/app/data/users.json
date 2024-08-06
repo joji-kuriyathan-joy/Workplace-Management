@@ -10,6 +10,7 @@
         "username": "orgadmin1@example.com",
         "password": "$2b$12$TXy2MBeGMYreZrkyAr8mdelK/yTtYYKoBI2gT3XIffPu6t/z4u0Hm",
         "role": "admin",
+        "verified": true,
         "organization": "Org1"
     },
     {
@@ -18,20 +19,15 @@
         "password": "$2b$12$9hBdaFcypmA2FUbjTbf9u.fmBNFmZD2fG17e965hfIIDYUP3WAusC",
         "role": "user",
         "organization": "Org1",
+        "verified": true,
         "reset_token": "85e018e3-0966-48d1-9d84-6ad31a877cbd"
-    },
-    {
-        "id": "d292bd28-c5b4-4135-ae61-25cbbc3a1d9c",
-        "username": "newuser@example.com",
-        "password": "$2b$12$LJ0mz1OUDy8qfPI6oTYQx.E0O2e7Jb0UYb83WClyuKClAbkDmeBS6",
-        "role": "user",
-        "organization": "Org1"
     },
     {
         "id": "15f81874-d668-4741-bf52-832e6d53a2a4",
         "username": "anothernewuser@example.com",
         "password": "anothernewuserpass",
         "role": "user",
+        "verified": true,
         "organization": "Org1"
     },
     {
@@ -39,13 +35,15 @@
         "username": "uniquenewuser@example.com",
         "password": "$2b$12$HPD2zkPUCmP3GkmFJQwyeeYaCN6gCx2QyjeGhGtNpkW3sSVlVkWly",
         "role": "user",
+        "verified": true,
         "organization": "Org1"
     },
     {
         "id": "18766c91-e842-4437-b230-b244b14d5ba3",
-        "username": "uniqueanothernewuser@example.com",
+        "username": "Bony@example.com",
         "password": "anothernewuserpass",
         "role": "user",
+        "verified": true,
         "organization": "Org1"
     },
     {
@@ -71,6 +69,7 @@
         "username": "sample@example.com",
         "password": "$2b$12$Kx1vT1wslzIIE5AgzzwOhOX9xPs1YPXne3Ycrld5GJqZ14PyKRs0O",
         "role": "user",
+        "verified": true,
         "organization": "Org1"
     },
     {
@@ -80,5 +79,127 @@
         "role": "admin",
         "organization": "Org1",
         "verified": true
+    },
+    {
+        "id": "2e68b8eb-789d-43c9-9443-fcfa9eba2a84",
+        "username": "tomjo@gmail.com",
+        "password": "$2b$12$58MOzOEkJrv.5zq1NnK1IOYP9jwpFIUpd3mBvVIieEsO5M4Isnd9C",
+        "role": "user",
+        "organization": "Org2",
+        "verified": true
+    },
+    {
+        "id": "5c3959de-9190-4804-a4b0-69b21a29151d",
+        "username": "tom2@gmail.com",
+        "password": "$2b$12$fAt5X55JX2/1Zzk3HcBgZ.QYxfKxEhgnpmE/hVGtUHsFK6FgyvkJa",
+        "role": "admin",
+        "organization": "Org2",
+        "verified": true
+    },
+    {
+        "id": "0ff4d72d-7175-46ea-85f7-ca685a904a5e",
+        "username": "anshageroge1997@gmail.com",
+        "password": "$2b$12$BAVcAR1I6QJ4j8JYyX4HgOPXITk4bP7sIeGijj1FAtV00tp4.HTBS",
+        "role": "user",
+        "verified": true,
+        "organization": "Org2"
+    },
+    {
+        "id": "a8fdcba0-1b13-44b3-9aba-014c4ef4e766",
+        "username": "anshageroge1998@gmail.com",
+        "password": "$2b$12$ii6qpUi0po9V1vfhYMMbY.CS52jB.kIs2VZ9tb.iAYbW9mqqzZrLS",
+        "role": "user",
+        "verified": true,
+        "organization": "Org2"
+    },
+    {
+        "id": "4298ab6b-bfd9-4e0c-8686-447e496a2138",
+        "username": "joji@gmail.com",
+        "password": "$2b$12$W/bF.wzXtcP7jKbM4LZuOu4awmwNkaCluTqGPG.kVPhVdTxJA9Bma",
+        "role": "user",
+        "verified": true,
+        "organization": "Org2"
+    },
+    {
+        "id": "2a80a40d-bf7f-4dc5-9ba8-a4088abf443b",
+        "username": "bob@gmail.com",
+        "password": "$2b$12$as2Sm.bsu8GK81TNuM2d2.mkQsZEVM7ILMdKA0PQywot.vkwzInR6",
+        "role": "user",
+        "verified": true,
+        "organization": "Org2"
+    },
+    {
+        "id": "ac526f11-2f15-4ee9-a58f-cf6fa53b24c4",
+        "username": "bob2@gmail.com",
+        "password": "$2b$12$fR.1Rlxcn1XkCyDZbNLBM.I.p3q4FW8lHhgGDa0C7KTi2HbJT9qi6",
+        "role": "user",
+        "verified": true,
+        "organization": "Org2"
+    },
+    {
+        "id": "f59ea643-7f85-49a3-a0d2-1dd559f4e2cc",
+        "username": "bob3@gmail.com",
+        "password": "$2b$12$EcjT4sWMuuUdwvP0mjUiAe1VlG9UBnsWIOlFhJxZ1ihUIfoe3z2Na",
+        "role": "user",
+        "verified": true,
+        "organization": "Org2"
+    },
+    {
+        "id": "34e04079-115f-4138-8cde-8a70ecf61ddd",
+        "username": "gog@gmail.com",
+        "password": "$2b$12$OMY1I2P1bycBuLnO.StaTeKt/8QHtEC3lFKd2yn6trlgV.6Fm.NE.",
+        "role": "user",
+        "organization": "Org2",
+        "verified": false
+    }
+    ,
+    {
+        "id": "f59ea643-7f85-49af3-a0d2-1dd559f4e2cc",
+        "username": "bob3@gmail.com",
+        "password": "$2b$12$EcjT4sWMuuUdwvP0mjUiAe1VlG9UBnsWIOlFhJxZ1ihUIfoe3z2Na",
+        "role": "user",
+        "verified": true,
+        "organization": "Org2"
+    },
+    {
+        "id": "34e04079-115f-413s8-8cde-8a70ecf61ddd",
+        "username": "gog@gmail.com",
+        "password": "$2b$12$OMY1I2P1bycBuLnO.StaTeKt/8QHtEC3lFKd2yn6trlgV.6Fm.NE.",
+        "role": "user",
+        "organization": "Org2",
+        "verified": false
+    }
+    ,
+    {
+        "id": "f59ea643-7f85-4a9a3-a0d2-1dd559f4e2cc",
+        "username": "bob3@gmail.com",
+        "password": "$2b$12$EcjT4sWMuuUdwvP0mjUiAe1VlG9UBnsWIOlFhJxZ1ihUIfoe3z2Na",
+        "role": "user",
+        "verified": true,
+        "organization": "Org2"
+    },
+    {
+        "id": "34e04079-115f-413d8-8cde-8a70ecf61ddd",
+        "username": "gog@gmail.com",
+        "password": "$2b$12$OMY1I2P1bycBuLnO.StaTeKt/8QHtEC3lFKd2yn6trlgV.6Fm.NE.",
+        "role": "user",
+        "organization": "Org2",
+        "verified": false
+    },
+    {
+        "id": "f59ea643-7f85-49a3-a0d2-1dvd559f4e2cc",
+        "username": "bob3@gmail.com",
+        "password": "$2b$12$EcjT4sWMuuUdwvP0mjUiAe1VlG9UBnsWIOlFhJxZ1ihUIfoe3z2Na",
+        "role": "user",
+        "verified": true,
+        "organization": "Org2"
+    },
+    {
+        "id": "34e04079-115f-4138-8cde-8a70ecf61addd",
+        "username": "gog@gmail.com",
+        "password": "$2b$12$OMY1I2P1bycBuLnO.StaTeKt/8QHtEC3lFKd2yn6trlgV.6Fm.NE.",
+        "role": "user",
+        "organization": "Org2",
+        "verified": false
     }
 ]

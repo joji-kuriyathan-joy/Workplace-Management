@@ -20,3 +20,7 @@ footer {
   bottom: 0;
   width: 100%;
 }
+
+.sidebar .Nav.Link:hover{
+  border:2px solid black !important;
+}
