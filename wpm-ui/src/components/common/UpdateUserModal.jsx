@@ -21,7 +21,7 @@ const UpdateUserModal = ({ show, handleClose, user, onUpdate }) => {
   };
 
   return (
-    <Modal show={show} onHide={handleClose} centered>
+    <Modal show={show} onHide={handleClose} centered backdrop="static">
       <Modal.Header closeButton>
         <Modal.Title>Update User</Modal.Title>
       </Modal.Header>

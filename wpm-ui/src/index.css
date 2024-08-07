@@ -24,3 +24,11 @@ footer {
 .sidebar .Nav.Link:hover{
   border:2px solid black !important;
 }
+
+
+@media only screen and (max-width: 600px) {
+  .table-scroll{
+    overflow-x: scroll;
+  }
+
+}

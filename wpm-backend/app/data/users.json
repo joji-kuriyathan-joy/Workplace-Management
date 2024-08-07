@@ -145,61 +145,11 @@
         "organization": "Org2"
     },
     {
-        "id": "34e04079-115f-4138-8cde-8a70ecf61ddd",
-        "username": "gog@gmail.com",
-        "password": "$2b$12$OMY1I2P1bycBuLnO.StaTeKt/8QHtEC3lFKd2yn6trlgV.6Fm.NE.",
+        "id": "5d262121-4272-4e60-a76c-3c24b38a2754",
+        "username": "ram@gmail.com",
+        "password": "$2b$12$P7JtKdkR.P2IEgi6XLvCxef8zYqitgLkpfSPKFekAQxl6Y6SEmKJa",
         "role": "user",
         "organization": "Org2",
-        "verified": false
-    }
-    ,
-    {
-        "id": "f59ea643-7f85-49af3-a0d2-1dd559f4e2cc",
-        "username": "bob3@gmail.com",
-        "password": "$2b$12$EcjT4sWMuuUdwvP0mjUiAe1VlG9UBnsWIOlFhJxZ1ihUIfoe3z2Na",
-        "role": "user",
-        "verified": true,
-        "organization": "Org2"
-    },
-    {
-        "id": "34e04079-115f-413s8-8cde-8a70ecf61ddd",
-        "username": "gog@gmail.com",
-        "password": "$2b$12$OMY1I2P1bycBuLnO.StaTeKt/8QHtEC3lFKd2yn6trlgV.6Fm.NE.",
-        "role": "user",
-        "organization": "Org2",
-        "verified": false
-    }
-    ,
-    {
-        "id": "f59ea643-7f85-4a9a3-a0d2-1dd559f4e2cc",
-        "username": "bob3@gmail.com",
-        "password": "$2b$12$EcjT4sWMuuUdwvP0mjUiAe1VlG9UBnsWIOlFhJxZ1ihUIfoe3z2Na",
-        "role": "user",
-        "verified": true,
-        "organization": "Org2"
-    },
-    {
-        "id": "34e04079-115f-413d8-8cde-8a70ecf61ddd",
-        "username": "gog@gmail.com",
-        "password": "$2b$12$OMY1I2P1bycBuLnO.StaTeKt/8QHtEC3lFKd2yn6trlgV.6Fm.NE.",
-        "role": "user",
-        "organization": "Org2",
-        "verified": false
-    },
-    {
-        "id": "f59ea643-7f85-49a3-a0d2-1dvd559f4e2cc",
-        "username": "bob3@gmail.com",
-        "password": "$2b$12$EcjT4sWMuuUdwvP0mjUiAe1VlG9UBnsWIOlFhJxZ1ihUIfoe3z2Na",
-        "role": "user",
-        "verified": true,
-        "organization": "Org2"
-    },
-    {
-        "id": "34e04079-115f-4138-8cde-8a70ecf61addd",
-        "username": "gog@gmail.com",
-        "password": "$2b$12$OMY1I2P1bycBuLnO.StaTeKt/8QHtEC3lFKd2yn6trlgV.6Fm.NE.",
-        "role": "user",
-        "organization": "Org2",
-        "verified": false
+        "verified": true
     }
 ]

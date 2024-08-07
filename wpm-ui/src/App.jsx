@@ -7,13 +7,14 @@ import UserPage from './pages/UserPage.jsx';
 import WelcomePage from './pages/WelcomePage.jsx';
 import { AuthProvider, useAuth } from './auth.jsx';
 import AdminDashboard from './components/admin/AdminDashboard.jsx';
-import RotaManagement from './components/admin/RotaManagement.jsx';
+import RotaDashboard from './components/admin/RotaManagement/RotaDashboard.jsx';
 import TimesheetApproval from './components/admin/TimesheetApproval.jsx';
 import UserManagement from './components/admin/UserManagement.jsx';
 import UserDashboard from './components/user/UserDashboard.jsx';
 import CreateOrganization from './components/admin/CreateOrganization.jsx';
 import CreateUser from './components/admin/CreateUser.jsx';
 import ViewUsers from './components/admin/ViewUsers.jsx';
+import Layout from './components/common/Layout.jsx'; 
 
 // A custom component to protect routes
 const PrivateRoute = ({ element, roles }) => {
@@ -32,13 +33,14 @@ const PrivateRoute = ({ element, roles }) => {
 function App() {
   return (
     <AuthProvider>
+      <Layout> {/* Wrap all routes with Layout */}
       <Routes>
         <Route path="/" element={<WelcomePage />} />
         <Route path="/login" element={<LoginPage />} />
         <Route path="/register" element={<RegisterPage />} />
         <Route path="/admin" element={<PrivateRoute roles={['admin', 'superadmin']} element={<AdminPage />} />} />
         <Route path="/admin/dashboard" element={<PrivateRoute roles={['admin', 'superadmin']} element={<AdminDashboard />} />} />
-        <Route path="/admin/rota-management" element={<PrivateRoute roles={['admin', 'superadmin']} element={<RotaManagement />} />} />
+        <Route path="/admin/rota-management" element={<PrivateRoute roles={['admin', 'superadmin']} element={<RotaDashboard />} />} />
         <Route path="/admin/timesheet-approval" element={<PrivateRoute roles={['admin', 'superadmin']} element={<TimesheetApproval />} />} />
         <Route path="/admin/user-management" element={<PrivateRoute roles={['admin', 'superadmin']} element={<UserManagement />} />} />
         <Route path="/user" element={<PrivateRoute roles={['user']} element={<UserPage />} />} />
@@ -48,6 +50,7 @@ function App() {
         <Route path="/admin/view-users" element={<PrivateRoute roles={['admin', 'superadmin']} element={<ViewUsers />} />} />
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>
+      </Layout>
     </AuthProvider>
   );
 }

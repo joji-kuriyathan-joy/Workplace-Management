@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Form, Button, Container, Row, Col, Alert } from 'react-bootstrap';
-import Header from '../components/common/Header.jsx';
-import Footer from '../components/common/Footer.jsx';
 import { useAuth } from '../auth.jsx';
 
 const LoginPage = () => {
@@ -46,7 +44,7 @@ const LoginPage = () => {
 
   return (
     <div>
-      <Header />
+      
       <Container className="mt-4">
         <Row className="justify-content-center">
           <Col md={6}>
@@ -78,7 +76,7 @@ const LoginPage = () => {
           </Col>
         </Row>
       </Container>
-      <Footer />
+     
     </div>
   );
 };

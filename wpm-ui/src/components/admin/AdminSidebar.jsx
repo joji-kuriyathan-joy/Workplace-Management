@@ -13,6 +13,8 @@ const AdminSidebar = () => {
        {isSuperAdmin && <Nav.Link as={Link} to="/admin/create-organization">Create Organization</Nav.Link>}
        <Nav.Link as={Link} to="/admin/create-user">Create User</Nav.Link>
        <Nav.Link  as={Link} to="/admin/view-users">View All Users</Nav.Link>
+       <Nav.Link  as={Link} to="/admin/rota-management">Rota Management</Nav.Link>
+
     </Nav>
   );
 };

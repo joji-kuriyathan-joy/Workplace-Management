@@ -90,6 +90,7 @@ wpm-ui/
 # 2. Installing Dependencies
     npm install react-router-dom
     npm install @vitejs/plugin-react
+    npm install react-big-calendar
 
 # Project Set up Backend
     mkdir wpm-backend

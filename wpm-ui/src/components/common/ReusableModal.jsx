@@ -3,7 +3,7 @@ import { Modal, Button } from 'react-bootstrap';
 
 const ReusableModal = ({ show, handleClose, title, message, confirmLabel, cancelLabel, onConfirm }) => {
   return (
-    <Modal show={show} onHide={handleClose} centered>
+    <Modal show={show} onHide={handleClose} centered backdrop="static">
       <Modal.Header closeButton>
         <Modal.Title>{title}</Modal.Title>
       </Modal.Header>

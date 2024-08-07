@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Button, Alert, Spinner, Container, Row, Col, Form, ButtonGroup } from 'react-bootstrap';
-import Header from '../../components/common/Header.jsx';
-import Footer from '../../components/common/Footer.jsx';
 import AdminSidebar from '../../components/admin/AdminSidebar.jsx';
 const CreateUser = () => {
     const [error, setError] = useState(null);
@@ -71,7 +69,7 @@ const CreateUser = () => {
 
     return (
         <div>
-            <Header />
+           
             <Container className='mt-2'>
                 <Row>
                     <Col md={2} className="bg-light p-4 text-black">
@@ -140,7 +138,7 @@ const CreateUser = () => {
                     </Col>
                 </Row>
             </Container>
-            <Footer />
+           
         </div >
     );
 }

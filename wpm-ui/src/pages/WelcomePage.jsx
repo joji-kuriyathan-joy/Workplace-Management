@@ -1,13 +1,10 @@
 import React from 'react';
 import { Container, Row, Col, Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import Header from '../components/common/Header.jsx';
-import Footer from '../components/common/Footer.jsx';
 
 const WelcomePage = () => {
   return (
     <div>
-      <Header />
       <Container fluid className="text-center mt-4">
         <Row className="justify-content-center">
           <Col md={8}>
@@ -21,7 +18,6 @@ const WelcomePage = () => {
           </Col>
         </Row>
       </Container>
-      <Footer />
     </div>
   );
 };
